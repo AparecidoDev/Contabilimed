@@ -1,0 +1,72 @@
+@model Publicacao
+@{
+    ViewData["Title"] = "Logado";
+}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="~/css/Logado.css">
+    <title>Logado</title>
+</head>
+<body>
+    <main>
+        <div class="perfil">
+            @if(ViewBag.UserName != null)
+            {
+                <span> Olá @ViewBag.UserName</span>
+            }
+        </div>
+        <div class="Adicionar-conteudo">
+            <form method="POST" action='@Url.Action("Cadastrar")' enctype="multipart/form-data">
+                <div class="busca">
+                    
+                        <div class="digite" >  
+                             <li><input  type="text"  name="Legenda" placeholder="Descrição Arquivo" required></li>
+                        </div>
+
+                        <div class="escolher">
+                             <input  type="file" id="selecao-arquivo" name="Imagem" equired>
+                        </div>
+
+                        <div class="data">
+                            <input  class="data" type="date" placeholder="Data"  name="Data"  required />
+                        </div>
+                        
+                        <div class="postar">
+                            <li><button  type="submit">Arquivar</button></li>
+                        </div>
+                </div>
+            </form>
+                <div class="search-container">
+                        <div id="search">
+                            <img src="images/Vector.svg" alt="Procurar" />
+                            <input id="buscar" type="text" placeholder="Procurar" />
+                        </div>
+                </div>
+               
+        </div>
+        <div class="doc">
+            <ul>
+                @foreach (Publicacao publicacao in ViewBag.Publicacoes)
+                {
+                    <li class="imagem">
+                        <img src="~/img/Publicacao/@publicacao.Imagem" alt="Imagem da publicacao @publicacao.Legenda">
+                        <p>@publicacao.Legenda</p>
+                        @* <p>@publicacao.Data</p> *@
+                        <a asp-area="Link para excluir uma publicacao" asp-controller="Publicacao"asp-action="Excluir" asp-route-id="@publicacao.IdPublicacao">Excluir</a> 
+                    </li>
+                }
+            </ul>
+        </div>
+        <div class="options">
+            <a asp-area="" asp-controller="Login" asp-action="Deslogar" title="Sair">Sair</a>
+        </div>
+    </main>
+    <footer >
+        Contabilimed
+    </footer>
+</body>
+</html>
+

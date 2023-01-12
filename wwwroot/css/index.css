@@ -1,0 +1,425 @@
+*{
+    margin:  0%;
+    padding: 0%;
+    border:  0%;
+    box-sizing: border-box;
+
+}
+main
+{
+    background-image: url("../images/imagem_fundo.jpeg");
+    background-position: center;
+    background-size: cover;
+}
+body{
+    height: 100%;
+    width: auto;
+    font-family:"roboto";
+    font-size: 50px;                   
+    /* background-color: white; */
+    /*  background-image: url("../images/imagem_fundo.jpeg");
+    background-position: center;
+    background-size: cover;
+   background-size: 100%; */
+}
+
+.topo{
+    height: 100%;
+    width: 100% ;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:white;
+}
+
+.text
+{
+    height: 80px;
+    width: 100%;    
+    border-radius: 'nullpx';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.entrar
+{
+    height: 89px;
+    width: 100%;
+    display: flex;
+    color: black;
+    justify-content: space-around;
+    padding-top: 45px;
+    background: white;
+}
+
+.entrar1
+{
+    height:600px;
+    width:100%;
+    font-size: 50px;
+    color: white;
+    display: flex;
+    -webkit-text-stroke-width: 2px;      /* colocar uma borda no texto e a largura   */
+    -webkit-text-stroke-color: #000;   /* colocar da borda  */
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 45px;
+    /* background-image: url("../images/imagem_fundo.jpeg");
+    background-size: 100%; */
+}
+
+.entrar1 p
+{
+    margin-top: 20px;
+    font-size: 50px;
+}
+
+.btn{
+    width: 110px;
+    height: 30px;
+    font-size: 18px;
+    color: #000;
+    text-decoration:none;
+    border-radius: 12px;
+    display :flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.btn2
+{
+    width: 110px;
+    height: 30px;
+    font-size: 18px;
+    text-decoration: none;
+    color: #000;
+    border-radius: 12px;
+    display :flex;
+    justify-content: center;
+    align-items: center;
+} 
+
+.content
+{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.interna
+{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.campos
+{
+    width: 100%;
+    height: 500px;
+    background-color: white;
+    
+}
+
+.campos h3
+{
+    font-size: 40px;
+    text-transform: uppercase;
+    margin-top: 100px;
+    color: rgb(68, 68, 250);
+    
+}
+
+.campos span
+{
+    font-size: 30px;
+    margin-top: 50px;
+}
+
+.texto1
+{
+    width: 1000px;
+    font-size: 20px;
+}
+
+.campos2
+{
+    width: 100%;
+    height: 550px;
+    background-image: url("../images/Horizonte_metrolitano.png");
+    background-size: cover;
+}
+
+.content2
+{
+    width: 100%;
+    height: 100%;
+    background-color: #FFFDFD;  
+    display: flex;
+}
+
+.servicos
+{
+    width: 100%;
+    height: 300px;
+    margin-top: 80px;
+    text-transform: uppercase;
+    font-size: 35px;
+    color: rgb(56, 56, 207);
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column; 
+}
+
+.servicos p
+{
+    font-size: 20px;
+    text-transform: none;
+    color: black;
+    padding-bottom: 150px;
+}
+
+.images
+{
+    width: 100%;
+    height: auto;
+    display: flex;
+
+}
+
+.img
+{
+    width: 50%;
+    height: 416px;
+    /* border: 1px solid #000000; */
+    background-image: url("../images/imagem1.jpeg");
+    background-size:cover;
+    color: white;
+    font-size: 40px;
+    padding-left: 45px;
+    /*-webkit-text-stroke-width: 2px;       colocar uma borda no texto e a largura   */
+    /*-webkit-text-stroke-color: #000;   colocar da borda  */
+    display: flex;
+    justify-content: center;
+    align-items: inherit;
+    flex-direction: column;
+}
+
+.img span
+{
+    padding-top: 25px;
+    font-size: 30px;
+}
+
+.img button 
+{
+    margin-top: 30px;
+    height: 50px;
+    width: 150px;
+    color: white;
+    border: none;
+    background-color:  rgb(68, 68, 250);
+}
+
+.img2
+{
+    width: 50%;
+    height: 416px;
+    background-image: url("../images/imagem2.jpeg");
+    color: white;
+    font-size: 40px;
+    padding-left: 45px;
+    display: flex;
+    justify-content: center;
+    align-items :inherit ;
+    flex-direction: column;
+    /* border: 1px solid #000000; */    
+    /*-webkit-text-stroke-width: 2px;       colocar uma borda no texto e a largura   */
+    /* -webkit-text-stroke-color: #000;     colocar da borda  */
+    /* background-color: turquoise; */
+}
+
+.img2 span
+{
+    padding-top: 45px;
+    font-size: 30px;
+}
+
+.img2 button 
+{
+    height: 50px;
+    width: 150px;
+    color: white;
+    border: none;
+    margin-top: 65px;
+    background-color:  rgb(68, 68, 250);
+}
+
+.content2 h1 
+{
+    font-family: 'Roboto';
+    font-size: 45px;
+    padding-top: 75px;
+    padding-left: 50px;
+}  
+
+.content2 h2 
+{
+    font-family: 'Roboto';
+    font-size: 40px;
+    padding-top: 75px;
+    padding-left: 100px;
+}
+
+.contate
+{
+    height:600px;
+    width:100%;
+    background-color: white;
+    display: flex;
+    /* justify-content: center; */
+}
+
+.esquerda
+{
+    width: 50%;
+    display: flex;
+    align-items:center;
+    justify-content: space-around;
+    flex-direction: column; 
+}
+
+.esquerda h3
+{
+    text-transform: uppercase;
+    padding-left: 150px;
+    font-size: 50px;
+    color: rgb(56, 56, 207);
+}
+
+.esquerda p 
+{
+    padding-left: 150px;
+    font-size: 20px;
+    color: rgb(117, 107, 107);
+    /* margin-top: 80px; */
+}
+
+.direita
+{
+    width: 50%;
+    height: 600px;
+    font-size: 30px;
+    margin-left: 200px;
+    padding-left: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.direita span
+{
+
+    color:rgb(117, 107, 107);
+    font-size: 25px;
+    margin-left: 50px;
+    padding-bottom: 60px;
+}
+/* ======================================================================================================= */
+/* Ícones e Inputs de Login */
+
+  
+  .item {
+    padding: 5px;
+    margin: 10px;
+    text-align: center;
+  }
+    
+  .input__login {
+    border: 0;
+    width: 350px;
+    border-bottom: 1px solid #e6e6e6;
+    text-align: center;
+    padding: 10px;
+    background: transparent;
+    color: #808080;
+    text-align: left;
+  }
+  
+  .input__login:hover,
+  .input__login:focus {
+    border: 0;
+    border-bottom: 1px solid ;
+    text-align: center;
+    background: transparent;
+    color: #595959;
+    text-align: left;
+  }
+  
+  /* webkit solution */
+  ::-webkit-input-placeholder {
+    text-align: left;
+  }
+  
+  /* mozilla solution */
+  input:-moz-placeholder {
+    text-align: left;
+  }
+  
+  /* Botões de login */
+  
+  .btn {
+    margin-top: 10px;
+    border: none;
+    color: white;
+    border-radius: 3px;
+    width: 350px;
+    padding: 10px 52px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 10px;
+    -webkit-transition-duration: 0.4s;
+    /* Safari */
+    transition-duration: 0.4s;
+    cursor: pointer;
+  }
+  
+  .btn__login {
+    background-color: black;
+    color: #fff;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
+    box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
+  }
+  
+  .btn__login:hover {
+    background-color: black;
+    color: white;
+    -webkit-box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
+    -moz-box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
+    box-shadow: 2px 2px 5px 0px rgba(184, 184, 184, 1);
+  }
+
+
+/* ========================================================================================================= */
+footer
+{
+    Width :100%;
+    Height: 81px;
+    font-family: 'Roboto';
+    font-size: 50px;
+    color: #FFFFFF;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

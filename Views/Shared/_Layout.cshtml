@@ -1,0 +1,58 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    @* <link rel="stylesheet" href="~/css/Login.css" />
+    <link rel="stylesheet" href="~/css/Logado.css" />
+    <link rel="stylesheet" href="~/css/cadastro.css" />
+    <link rel="stylesheet" href="~/css/index.css" /> *@
+
+    <title>@ViewData["Title"] - TCC</title>
+    @switch (ViewData["Title"])
+    {
+       case "Login":
+            <link rel="stylesheet" href="~/css/Login.css" />
+            break;
+
+          case "Publicacao":
+            <link rel="stylesheet" href="~/css/Logado.css" />
+            break; 
+
+        case "Usuario":
+            <link rel="stylesheet" href="~/css/cadastro.css" />
+            break;
+
+        case "Home":
+            <link rel="stylesheet" href="~/css/index.css" />
+            break;
+        default:
+            break;
+    }
+</head>
+<body>
+     @switch (ViewData["Title"])
+    {
+       case "Login":
+        break;
+        case "Cadastro":
+        break;
+        default:
+       <header class="topo">
+                <h1>Contabilimed</h1>
+        </header>
+        break;
+
+    }  
+
+     
+        <main role="main" class="pb-3">
+            @RenderBody()
+        </main>
+        
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

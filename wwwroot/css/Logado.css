@@ -1,0 +1,261 @@
+*{
+    margin:  0%;
+    padding: 0%;
+    border:  0%;
+    box-sizing: border-box;
+
+}
+
+body{
+    height: 100%;
+    font-family:"roboto";
+    font-size: 50px;                            
+    background-color: rgb(247, 241, 241);
+}
+main
+{
+    width: auto;
+    height: auto;
+}
+
+.topo
+{
+    height: 100%;
+    width: 100% ;
+    font-size: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background:white;
+}
+
+.text
+{
+    height: 143px;
+    width: 1200px;    
+    border-radius: 'nullpx';
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.text h1
+{
+    font-size: 80px;
+}
+
+.perfil
+{
+    width: 50%;
+    height: 99px;
+    display: flex;
+    padding: 30px;
+}
+
+.perfil span
+{
+    padding: 20px;
+    font-size: 45px;   
+}
+.Adicionar-conteudo
+{
+    width: 900px;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;
+    /* background-color: blue; */
+}
+form
+{
+   
+    /* padding: 30px; */
+    /* border: 2px solid #000000; */
+    /* background-color: crimson; */
+    display: flex;
+    /* justify-content: space-between; */
+    /* align-items: center; */
+    list-style-type: none;
+}
+
+.busca
+{ 
+    width: 900px;
+    height: 80px;
+    margin-left: 15px;
+    display: flex;
+    align-items: baseline;                  /* manter os itens alinhados em linha */
+    justify-content: space-around;
+    /* background-color: blue; */
+}
+
+.digite input 
+{
+    width: 231px;
+    height: 27px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    text-align: center;
+    border: 1px solid #DCDCDC;
+}
+
+.escolher input {
+    width: 110px;
+    height: auto;
+    border-radius: 5px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: 600;
+    /* background-color: black; */
+    /* background-color: #D1D1D1; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.data
+{
+    width: 180px;
+    height: 27px;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: 400;
+    text-align: center;
+    border: 1px solid #DCDCDC;
+}
+
+.Adicionar-conteudo button {
+    width: 140px;
+    height: 27px;
+    background-color: #2686CC;
+    border: none;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 600;
+    color: white;
+}
+
+                /* ------pesquiar--------- */
+
+.search-container {
+    width: 90px;
+    height: 50px;
+    border-radius: 0.2rem;
+    margin-left: 7.7rem;
+
+    width: 231px;
+    height: 27px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: 400;
+    justify-items: flex-end ;
+    text-align: center;
+    border: 1px solid #DCDCDC;
+}
+
+.search-container {
+    width: 21.5rem;
+    height: 2.8rem;
+    background: #FAFAFA;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 0.1rem #dcdcdc;
+    border-radius: 0.2rem;
+    margin-left: 7.7rem;
+}
+
+#search {
+    display: flex;
+    padding-left: 2.9rem;
+    justify-content: center;
+}
+
+#search img {
+    width: 1rem;
+    margin-right: 0.5rem;
+}
+
+.doc 
+{
+    width: 1000px;
+    height: 500px;
+    font-size: 30px;
+    margin-left: 200px;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.doc ul {
+    width: 1000px;
+    height: 1000px;
+    padding-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-radius: 10px;
+    overflow-x: auto;         /*serve para deixar o quadrado de scroll dentro da main , para nao atravessar outra div */
+}
+
+.doc ul::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+.imagem
+{   width: 220px;
+    font-size: 25px;
+    list-style-type: none;
+    margin-top: 20px;
+
+    /* background-color: rgba(0, 0, 255, 0.288); */
+}
+
+.doc img
+{
+    width: 200px;
+    height: 200px;
+}
+
+.doc li
+{
+    list-style-position: none;
+}
+
+footer
+{
+    Width :100%;
+    Height: 81px;
+    font-family: 'Roboto';
+    font-size: 50px;
+    color: #FFFFFF;
+    background-color: black;
+    display: flex;
+    justify-content: center;
+}
+
+/* opção sair */
+.options 
+{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+.options a:first-child {
+    margin-right: 3rem;
+}
+
+.options a {
+    text-decoration: none;
+    color: #2686CC;
+    font-weight: 600;
+    font-size: 1.5rem;
+}
+
+.options a:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
